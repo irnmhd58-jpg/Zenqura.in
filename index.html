@@ -583,6 +583,19 @@
     .sticky-bar { display: flex; }
     body { padding-bottom: 76px; }
   }
+  .more-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .more-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body>
@@ -821,7 +834,7 @@
     <p class="section-sub">Curated Islamic lifestyle products — thoughtfully made</p>
   </div>
 
-  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 960px; margin: 0 auto;">
+  <div class="more-products-grid">
 
     <!-- Digital Tasbeeh Counter -->
     <div class="product-card-mini" style="background:white; border-radius:16px; overflow:hidden; border:1px solid var(--border); transition: transform 0.3s, box-shadow 0.3s; cursor:pointer;"
@@ -982,6 +995,7 @@
 </body>
 
 </html>
+
 
 
 
